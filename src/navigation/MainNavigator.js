@@ -15,6 +15,8 @@ const MainNavigator = () => {
                          <Stack.Screen name="Splash" component={Splash} options={{headerShown:false}} />
                          <Stack.Screen name="ChooseUserType" component={ChooseUserType} options={{headerShown:false}} />
                          <Stack.Screen name="Login" component={Login} options={{headerShown:false}} /> 
+  
+                         
 
         </Stack.Navigator>
 
