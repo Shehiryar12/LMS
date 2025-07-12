@@ -1,6 +1,7 @@
 import {Image, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import { SELECT_USER } from '../Utils/Strings'
+import BgButton from '../Components/BgButton'
 
 const ChooseUserType = () => {
   return (
@@ -9,6 +10,7 @@ const ChooseUserType = () => {
 
        <Image source={require("../images/Users.jpg")} style={styles.imagestyle}/>
        <Text style={styles.textuser}>{SELECT_USER}</Text>
+       <BgButton/>
     </View>
   )
 }
