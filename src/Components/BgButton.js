@@ -1,13 +1,11 @@
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import React from 'react'
 
-const BgButton = (title,OnClick) => {
+const BgButton = ({ title, OnClick }) => {
   return (
     <View>
-      <Text>BgButton</Text>
-
       <TouchableOpacity style={styles.btn} onPress={OnClick}>
-            <Text>{title}</Text>
+        <Text style={styles.colortext}>{title}</Text>
       </TouchableOpacity>
     </View>
   )
@@ -16,16 +14,19 @@ const BgButton = (title,OnClick) => {
 export default BgButton
 
 const styles = StyleSheet.create({
-        btn:{
-              backgroundColor:'#FF6931',
-              width:'80%',
-              justifyContent:'center',
-              alignItems:"center",
-
-        },
-
-        title:{
-            fontWeight:600,
-        }
-    
-},)
+  btn: {
+    backgroundColor: '#FF6931',
+    width: '90%',
+    height: 50,
+    alignSelf: 'center',
+    marginVertical: 16,
+    borderRadius: 10,
+  },
+  colortext: {
+    color: 'white',
+    alignSelf: 'center',
+    fontSize: 16,
+    marginVertical:11,
+    fontWeight:500,
+  }
+})
