@@ -12,7 +12,7 @@ const Bottom = createBottomTabNavigator();
 const TutorHome = () => {
   return (
     <Bottom.Navigator>
-      <Bottom.Screen name="LiveCourses" component={LiveCourses} options={{headerShown:false}}/>
+      <Bottom.Screen name="LiveCourses" component={LiveCourses}/>
       <Bottom.Screen name="CourseSell" component={CourseSell}/>
       <Bottom.Screen  name="TutorProfile" component={TutorProfile} />
 
