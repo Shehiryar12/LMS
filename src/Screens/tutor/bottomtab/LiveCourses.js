@@ -1,15 +1,20 @@
-import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
+import { FlatList, Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import React from 'react'
 import { moderateScale, verticalScale } from 'react-native-size-matters'
 import { WHITE } from '../../../Utils/Colors'
 import { useNavigation } from '@react-navigation/native'
 import Addcourses from './Courses/Addcourses'
+import CourseItem from '../../../Components/Courses/CourseItem'
 
 const LiveCourses = () => {
   const navigation=useNavigation()
   return (
     <View style={styles.container} >
-      <Text>LiveCourses</Text>
+
+      <FlatList data={[1,1,1,1,1,1]} renderItem={({item,index}) =>{
+        return <CourseItem item={item} index={index}/>
+      }}/>
+     
       <TouchableOpacity style={styles.addbtn} onPress={()=>{
             navigation.navigate('Addcourses')
       }}>

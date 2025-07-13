@@ -16,7 +16,7 @@ const Addcourses = () => {
              <Image source={require("../../../../images/plus.png")} style={styles.imagestyle}/> 
                 <Text style={styles.addtext}>Add courses Banner</Text> 
       </TouchableOpacity>
-      <CustomInput KeyboardType="numeric" placeholder={"Enter Course Title"}/>
+      <CustomInput KeyboardType="numeric" placeholder={"Enter Course Title"} maxLength={11}/>
        <CustomInput  KeyboardType="default" placeholder={"Enter Course Description"}/>
        <CustomInput  KeyboardType="numeric" placeholder={"Enter Course Price"}/>
 

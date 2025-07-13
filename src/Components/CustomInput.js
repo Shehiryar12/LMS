@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import { verticalScale } from 'react-native-size-matters'
 import { TextInput } from 'react-native-gesture-handler'
 
-const CustomInput = ({KeyboardType,placeholder}) => {
+const CustomInput = ({KeyboardType,placeholder,maxLength}) => {
   const [isFocused,setisFocused]=useState(false)
   return (
     <View style={styles.container}> 
@@ -17,6 +17,7 @@ const CustomInput = ({KeyboardType,placeholder}) => {
         }} 
         keyboardType={KeyboardType}
         placeholder={placeholder}
+      maxLength={maxLength}
         
       
         onFocus={() => setisFocused(true)} />
