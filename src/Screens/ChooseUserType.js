@@ -20,7 +20,7 @@ const ChooseUserType = () => {
 
       <BorderButton
         title={LEARNER_TITLE}
-        OnClick={() => navigation.navigate('Login', { screen: 'learner' })}
+        OnClick={() => navigation.navigate('Login')}
       />
     </View>
   );

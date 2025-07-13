@@ -12,10 +12,15 @@ const MainNavigator = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Splash" screenOptions={{ headerShown: false }}>
-        <Stack.Screen name="Splash" component={Splash} />
-        <Stack.Screen name="ChooseUserType" component={ChooseUserType} />
-        <Stack.Screen name="Login" component={Login} />
-        <Stack.Screen name="TutorHome" component={TutorHome} />
+        <Stack.Screen name="Splash" component={Splash} screenOptions={{ headerShown: false }}/>
+        <Stack.Screen name="ChooseUserType" component={ChooseUserType}  screenOptions={{ headerShown: false }} />
+        <Stack.Screen name="Login" component={Login}  screenOptions={{ headerShown: false }}/>
+        <Stack.Screen name="TutorHome" component={TutorHome} screenOptions={{ headerShown: false }}/>
+        
+
+         
+         
+     
       </Stack.Navigator>
     </NavigationContainer>
   );
