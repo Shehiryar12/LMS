@@ -3,9 +3,9 @@ import React from 'react'
 import { moderateScale, verticalScale } from 'react-native-size-matters'
 import { WHITE } from '../../Utils/Colors'
 
-const CourseItem = () => {
+const CourseItem = (index,data) => {
   return (
-    <View style={styles.container}>
+    <View style={styles.container} >
     
     <Image source={(require("../../images/place.png"))} style={{width:'100%', height:"72%",borderRadius:8}}/>
     <Text style={{fontWeight:'600', fontSize:16,marginLeft:3,}}>React Native Components</Text>
@@ -26,6 +26,6 @@ const styles = StyleSheet.create({
      alignSelf:'center',
      marginTop:moderateScale(20),
      borderRadius:8,
-    
+   
     },
 })

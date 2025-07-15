@@ -12,7 +12,7 @@ const LiveCourses = () => {
     <View style={styles.container} >
 
       <FlatList data={[1,1,1,1,1,1]} renderItem={({item,index}) =>{
-        return <CourseItem item={item} index={index}/>
+        return <CourseItem item={item} index={index} data={[1,1,1,1,1,1]}/>
       }}/>
      
       <TouchableOpacity style={styles.addbtn} onPress={()=>{
