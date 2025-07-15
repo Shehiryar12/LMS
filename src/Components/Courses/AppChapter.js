@@ -15,11 +15,15 @@ const AppChapter = () => {
       <TouchableOpacity style={styles.bannerview}>
             
              <Image source={require("../../images/plus.png")} style={styles.imagestyle}/> 
-                <Text style={styles.addtext}>Add courses Banner</Text> 
+                <Text style={styles.addtext}>Add courses Description</Text> 
       </TouchableOpacity>
-      <CustomInput KeyboardType="default" placeholder={"Enter Course Title"} maxLength={11}/>
-       <CustomInput  KeyboardType="default" placeholder={"Enter Chapter Description"} numberOfLines={50} multiline={true}/>
-       <CustomInput  KeyboardType="numeric" placeholder={"Enter Course Price"}/>
+      
+      
+     <View style={styles.coursetitle}>
+      <CustomInput KeyboardType="default" placeholder={"Enter Course Title"} maxLength={11} />
+     </View>
+       <CustomInput  KeyboardType="default" placeholder={"Enter Chapter Description"} />
+     
 
        <View style={styles.isactive}>
         <Text>Course is Active:</Text>
@@ -70,8 +74,10 @@ const styles = StyleSheet.create({
       alignItems:'center',
       marginHorizontal:17,
       marginVertical:10,
+    },
 
-
+    coursetitle:{
+        // height:verticalScale(10)
     }
     
 })

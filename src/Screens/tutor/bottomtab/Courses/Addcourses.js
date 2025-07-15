@@ -17,7 +17,8 @@ const Addcourses = () => {
                 <Text style={styles.addtext}>Add courses Banner</Text> 
       </TouchableOpacity>
       <CustomInput KeyboardType="default" placeholder={"Enter Course Title"} maxLength={11}/>
-       <CustomInput  KeyboardType="default" placeholder={"Enter Course Description"}/>
+       <CustomInput  KeyboardType="default" placeholder={"Enter Course Description"} /> 
+      
        <CustomInput  KeyboardType="numeric" placeholder={"Enter Course Price"}/>
 
        <View style={styles.isactive}>
@@ -45,13 +46,14 @@ const styles = StyleSheet.create({
     },
     bannerview:{
       width:'90%',
-      height:verticalScale(180 ),
+      height:verticalScale(200 ),
       borderWidth:1,
       marginTop:moderateVerticalScale(20),
       borderRadius: moderateScale(20),
-      alignSelf:'center',
+      // alignSelf:'center',
       alignItems:'center',
       justifyContent:'center',
+      alignSelf:'center',
     },
     imagestyle:{
       width:20,
@@ -68,7 +70,7 @@ const styles = StyleSheet.create({
       justifyContent:'space-between',
       alignItems:'center',
       marginHorizontal:17,
-      marginVertical:10,
+      // marginVertical:10,
 
 
     }
