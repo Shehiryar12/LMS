@@ -17,7 +17,7 @@ const Addcourses = () => {
                 <Text style={styles.addtext}>Add courses Banner</Text> 
       </TouchableOpacity>
       <CustomInput KeyboardType="default" placeholder={"Enter Course Title"} maxLength={11}/>
-       <CustomInput  KeyboardType="default" placeholder={"Enter Course Description"} /> 
+       <CustomInput  KeyboardType="default" placeholder={"Enter Course Description"} containerStyling={{height:170}} /> 
       
        <CustomInput  KeyboardType="numeric" placeholder={"Enter Course Price"}/>
 
